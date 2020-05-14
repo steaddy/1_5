@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обслуживание</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header-service">
+        <p>Ремонт техники различных брендов</p>
+    </header>
+
+<main class="main">
+<div class="main-service">
+    <button class="arrow-button main-service__button lenovo"></button>
+    <button class="arrow-button main-service__button sumsung"></button>
+    <button class="arrow-button main-service__button apple"></button>
+    <button class="arrow-button main-service__button view-sonic"></button>
+    <button class="arrow-button main-service__button bosch"></button>
+    <button class="arrow-button main-service__button hp"></button>
+    <button class="arrow-button main-service__button lenovo"></button>
+    <button class="arrow-button main-service__button sumsung"></button>
+    <button class="arrow-button main-service__button apple"></button>
+</div>
+    <div class="read-more service-read-more">
+        <a class="read-more__link-show" href="#">Показать всё</a>
+        <a class="read-more__link-hide invisible" href="#">Скрыть</a>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><button class="arrow-button main-service__button apple"></button></button></div>
+            <div class="swiper-slide"><button class="arrow-button main-service__button sumsung"></button></button></div>
+            <div class="swiper-slide"><button class="arrow-button main-service__button lenovo"></button></button></div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+</main>
+
+</div>
+
+
+<script src="js/swiper.min.js"></script>
+<script src="js/js.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+
+        speed: 3500,
+        spaceBetween: 100,
+
+        autoplay: {
+            delay: 6500,
+            disableOnInteraction: false,
+    },
+
+
+
+
+
+
+
+
+    // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+</body>
+</html>
